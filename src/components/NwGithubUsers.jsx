@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { GetGithubUser } from "./GithubUsers";
 
 export function NwGitHubUsers() {
@@ -29,7 +30,11 @@ export function NwGitHubUsers() {
 
       <div>
         {usernames.map((username, index) => (
-          <GetGithubUser key={index} username={username} />
+          <div key={index}>
+            <Link to={`/users/${username}`}>
+              <GetGithubUser username={username} />
+            </Link>
+          </div>
         ))}
       </div>
     </div>

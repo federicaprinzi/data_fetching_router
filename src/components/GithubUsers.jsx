@@ -1,3 +1,4 @@
+import React from "react";
 import { useGithubUser } from "../hooks/useGithubUser";
 
 export function GetGithubUser({ username }) {
