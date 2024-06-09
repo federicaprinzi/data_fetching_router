@@ -6,3 +6,6 @@ received username.
 
 React Router - 4
 Add three Links within the main App component and use them to navigate to all three routes.
+
+React Router -7
+Add an index route to the GithubUserList route that shows the "Add a user and select it" message.
